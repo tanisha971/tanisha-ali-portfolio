@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Particle js</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header section navbar -->
+    <header class="header">
+        <a href="#" class="logo">Tanisha Ali</a>
+        <i class='bx bx-menu' id="menu-icon" onclick="toggleBlur()"></i>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="#" onclick="redirectToSection('about-me')">About</a>
+            <a href="#" onclick="redirectToSection('experience')">Experience</a>
+            <a href="#" onclick="redirectToSection('projects')">Projects</a>
+            <a href="#" onclick="redirectToSection('skills')">Skills</a>
+            <a href="#" onclick="redirectToSection('certificates')">Certificates</a>
+            <a href="#" onclick="redirectToSection('contact')">Contact</a>
+            <a href="./Tanisha Ali resume canva.pdf" download="Tanisha Ali resume canva.pdf">Download CV</a>
+        </nav>
+    </header>
+    <!-- Particle JS -->
+    <div id="particles-js"></div>
+     <!-- Body Content -->
+     <div id="content">
+        <div class="center-container">
+            <h1 id="typing"></h1>
+            <div class="container">
+                <div class="center-image">
+                    <img src="image-removebg.png" alt="Your Image" class="profile-pic">
+                </div>
+                <div class="icons">
+                    <a href="#" onclick="redirectToSection('about-me')" class="icon glass"><i class="fa-solid fa-user fa-2xl" style="color: #B197FC;"></i></a>
+                    <a href="#" onclick="redirectToSection('experience')" class="icon glass"><i class="fa-solid fa-briefcase fa-2xl" style="color: #B197FC;"></i></a>
+                    <a href="#" onclick="redirectToSection('projects')" class="icon glass"><i class="fa-solid fa-diagram-project fa-2xl" style="color: #B197FC;"></i></a>
+                    <a href="#" onclick="redirectToSection('skills')" class="icon glass"><i class="fa-solid fa-head-side-virus fa-2xl" style="color: #B197FC;"></i></a>
+                    <a href="#" onclick="redirectToSection('certificates')" class="icon glass"><i class="fa-solid fa-award fa-2xl" style="color: #B197FC;"></i></a>
+                    <a href="#" onclick="redirectToSection('contact')" class="icon glass"><i class="fa-solid fa-envelope-open-text fa-2xl" style="color: #B197FC;"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Add more sections as needed -->
+    <script type="text/javascript" src="particles.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
